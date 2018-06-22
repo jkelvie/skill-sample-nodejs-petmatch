@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ig-perez/skill-sample-nodejs-petmatch.svg?branch=ContinuousIntegration)](https://travis-ci.org/ig-perez/skill-sample-nodejs-fact)
+[![codecov](https://codecov.io/gh/ig-perez/skill-sample-nodejs-petmatch/branch/ContinuousIntegration/graph/badge.svg)](https://codecov.io/gh/ig-perez/skill-sample-nodejs-fact)
 #  Build An Alexa Pet Match Skill 🇺🇸
 <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/header._TTH_.png" />
 
