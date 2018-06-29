@@ -1,6 +1,5 @@
 ---
 configuration:
-  accessToken: 123456
   locales: de-DE, en-GB, en-US, es-ES
 
 ---
