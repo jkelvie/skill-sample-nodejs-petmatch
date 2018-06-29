@@ -1,0 +1,49 @@
+---
+configuration:
+  locales: de-DE, en-GB, en-US, es-ES
+
+---
+- test: Disambiguation of slot - mini can mean tiny or small
+- LaunchRequest
+- PetMatchIntent:
+  - slots:
+    size:
+      de: mini
+      en: mini
+      en-GB: tiddly
+      es: minúsculo
+  - response.outputSpeech.ssml:
+    de: Was möchtest du klein oder klein haben?
+    en: Which would you like small or tiny?
+    es: Cuál le gustaría pequeño o minúsculo?
+- PetMatchIntent
+  - slots:
+    size:
+      de: klein
+      en: small
+      es-ES: minúsculo
+  - response.outputSpeech.ssml:
+    de: Suchst du eher einen Familienhund oder einen Wachhund?
+    en: Are you looking for more of a family dog or a guard dog?
+    es: Estás buscando más de un perro de familia o un perro guardián?
+- PetMatchIntent:
+  - slots:
+    temperament:
+      de: wachen
+      en: guard
+      es: guardián
+  - response.outputSpeech.ssml:
+      de: Bevorzugen Sie Hunde mit hoher oder niedriger Energie?
+      en: Do you prefer high energy or low energy dogs?
+      es: Prefieres perros de alta energía o de baja energía?
+- PetMatchIntent:
+  - slots:
+    energy:
+      de: niedrig
+      en: low
+      es: baja
+  - response.outputSpeech.ssml:
+    de: Also ein kleiner Wachhund mit niedriger Energie klingt gut für dich. Betrachten Sie einen Miniatur-Snuser
+    en: So a small guard low energy dog sounds good for you. Consider a miniature snouser
+    es: Entonces, un perro de poca energía con poca guardia suena bien para ti. Considere un sanador en miniatura
+  - response.shouldEndSession: true
